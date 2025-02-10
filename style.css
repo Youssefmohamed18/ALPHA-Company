@@ -1,0 +1,360 @@
+*{
+    margin: 0px;/*مفيش مسافه خارجيه*/
+    padding: 0px;/*مفيش ماسفه داخليه*/
+    overflow-x: hidden;/*لو في حاجه بتطلع بار الشاشه من اليمين او الشمال مش هتظهر*/
+}
+body{
+    background: #23074d;  /* تحديد خليفه للصفحه لون غامق */
+background: -webkit-linear-gradient(to right, #cc5333, #23074d);  /* بيعمل تدرج للون من الشمال لليمين بيبدأ بالاحمر و ينتهي بالغامق */
+background: linear-gradient(to right, #cc5333, #23074d); /*يعمل تدرج للون من الشمال لليمين بيبدأ بالاحمر و ينتهي بالغامق  */
+font-family: nexa;/*ده الخط اللي في الصفحه*/
+color: white;/*لون الكلام بيبقا ابيض*/
+}
+.container-fluid{/*بيلغي اي مسافه او زيادات اللي محاطه بالعناصر اللي اسمها كده*/
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;/*بيمنع العناصر من الخروج من الحواف*/
+}
+.container-fluid , .row{/*بيلغي اي مسافه او زيادات اللي محاطه بالعناصر اللي اسمها كده*/
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;/*بيمنع العناصر من الخروج*/
+}
+.nav{
+    width: 100;/*العرض بيكون كامل في عرض الصفحه*/
+    overflow: visible;/*لو في عناصر زايده هتظهر*/
+
+}
+.nav .col-12 ul{/*العناصر اللي في التنقل*/
+    width: 100;/*العرض كامل*/
+    height: 10vh;/*ارتفاع 10% */
+    display: flex;/*العناصر اللي في القايمه هتتوزع افقي*/
+    justify-content: center;/*العناصر هتكون في المنتصف افقس*/
+    align-items: center;/*بيخلي العناصر في منتصف الصفحه عموديا*/
+    overflow: visible;/*لو في عنصر جواه محتوي زايد يعني طالع برا المساحه هيتعرض في الصفحه*/
+    padding: 0px;/*المساحه بين المحتوي و حدود العنصر هتبقا صفر*/
+    margin: 0px;/*المسافه الخارجيه هتبقا صفر*/
+    flex-wrap: wrap;/*يعني لو مفيش مساحه في السطر تنزل علي اللي بعده*/
+}
+.nav .col-12{
+    overflow: visible;/*لو في عنصر جواه محتوي زايد يعني طالع برا المساحه هيتعرض في الصفحه*/
+
+}
+.nav .col-12 ul li{
+    color: white;/*العناصر اللي جوا الليست بيتكون بالون الابيض*/
+    text-decoration: none;/*بتلغي اي خط تحت الرابط*/
+    font-weight: bold;/*بيخلي الخط عريض*/
+    margin: 0px 10px;/*مفيش مسافه خارجيه من فوق و تحت بس في من ايمين و الشمال 10 بيكسل*/
+    transition: 0.5s ease-in-out;/*بتحدد حركه تأثير اللون عند مرور المؤشر فوق الرابط و بياخد نص ثانيه*/
+}
+.nav .col-12 ul a{
+    color: white;/*لون النص ابيض*/
+    text-decoration: none;/*مفيش تحت الرابط خط*/
+    font-weight: bold;/*بيخلي النص عريض*/
+    transition: 0.5s ease-in-out;/*تأثير الانتاقل لما يحصل تغيير في خصائص العنصر و بياخد نص ثانيه و بيبقا بطئ و بعد كده سريع*/
+    font-size: 14pt;/*حجم الخط 14 نقطه*/
+    overflow: visible;/*لو حاجه طلعت برا العنصر هتظهر*/
+}
+.nav .col-12 ul a.active{
+    color: #18bcda;/*يعني لما بختار الرابط بيبقا لونه ازرق مدي للاخضر*/
+}
+.nav .col-12 ul a:hover{
+    color: #18bcda;/*لما الماوس يتحط فوق الرابط بيبقا لونه ازرق مايل للاخضر*/
+}
+.heading_text{
+    color: white;/*النص بيبقا لونه ابيض*/
+    font-weight: bold;/*النص هيبقا عريض*/
+    font-family:Verdana, Geneva, Tahoma, sans-serif;/*نوع الخط هيكون من عيله فيردانا و لو مش متاح هيستخدم جينيفا او توهاما او اي خط من سانسيريف*/
+    letter-spacing: 1px;/*المسافه بين الحروف 1 بكسل */
+    margin:75px auto;/*المسافه الفاضيه من فوق لتحت75 بيسكل و النسافه الافقيه تلقائي*/
+    display: flex;/*بيخلي العنصر داخل ال فليكس كونتينر */
+    justify-content: center;/*بيخلي العناصر في منتصف الافقي*/
+    font-size: 26pt;/*حجم الخط هيكون 26 */
+    background: transparent;/*الخلفيه هتكون شفافه*/
+    position: relative;/*بيحدد العنصر ده هيكون في موضع نسبي يعني بيتحدد بالعناصر التانيه*/
+    height: 50px;/*ارتفاع العنصر هيكون 50 بيسكل */
+    z-index: 5;/*بيحدد ترتيب العنصر بالنسبه للعناصر التانيه من قدما لورا*/
+    overflow: visible;/*بيعرض المحتوي لو خرج من الاطار*/
+}
+.main{
+    color: white;/*النص هيكون لونه ابيض*/
+    padding: 25px;/*المسافه جوه العنصر 25 بكسل*/
+    min-height: calc(90vh - 150px);/*اقل ارتفاع للعنصر هيكون 90% من ارتفاع الشاشه ناقص 150 بيكسل*/
+    display: flex;
+    align-items: center;/*العناصر هتتوزع في المنتصف عموديا*/
+    justify-content: space-between;/*توزيع العناصر بشكل متساوي مع وجود مسافه بينها*/
+    overflow: hidden;/*لو المحتوي خرج من الاطار مش هيتعرض*/
+}
+.main h3{
+    overflow: visible;/*بيظهر المحتوي لو خرج من الاطار */
+    font-family:anton;/*الخط هيكون انتون*/
+    font-weight: 400;/*النص هيبقا عادي */
+}
+.main img{
+    height: 300px;
+    width: auto;
+    margin: 0px 10%;
+    border-radius: 100px;/*الصورة هتكون مدورة من الاطراف*/
+}
+.TypedText{
+    font-weight: 600;
+    font-family: "ubuntu";
+    font-size: 32pt;
+    margin: 10px 0px 10px 50px;
+}	
+		
+.TypeCursor {
+    display: inline-block;/*المؤشر هيظهر جنب النص*/
+    background-color: #dd8c13;
+    margin-left: 0.1rem;
+    width: 8px;
+    animation: blink 1s infinite;/*حركه المؤشؤ يلمع بشكل مستمر و المده 1 ثانيه*/
+    font-size: 16pt;
+  }
+  @keyframes blink {
+    0%  { background-color: #dd8c13; }
+    49% { background-color: #dd8c13; }
+    50% { background-color: transparent; }
+    99% { background-color: transparent; }
+    100%  { background-color: #dd8c13; }
+  }
+
+
+
+.services{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;/*العناصر هتكون متوزة حول بعض بمسافات متساويه*/
+    align-items: center;
+    overflow: hidden;
+}
+.services > div{
+    overflow: visible;
+}
+.services a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 10px 0px;
+    overflow: visible;
+}
+.services a:hover{
+    color: white;
+    transform: scale(1.1);
+
+}
+.services img{
+    max-height: 40px;
+    margin: 0px 5px;
+}
+
+#scroll_top{
+    width: 40px;
+    height: 40px;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: -100px;
+    right: 40px;
+    cursor: pointer;
+    box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.3);
+    background: #23074d;  
+    z-index: 10;
+    transition: 0.5s ease-in-out;
+}
+
+.features{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 25px auto;
+}
+.features ul{
+    padding: 0px;
+    margin: 0px;
+}
+.features li{
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin: 20px 0px 0px 0px;
+}
+.features li img{
+    max-height: 30px;
+    margin: 0px 10px;
+}
+
+
+
+.contact{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+}
+.contact form{
+    width: 80%;
+    padding: 25px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+}
+.contact form div{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+.contact form label{
+    color: white;
+    margin: 25px 0px 5px 0px;
+    max-width: 150px;
+}
+.contact form input , .contact form textarea{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    background: #e6e6e6;
+}
+.contact form button{
+    margin: 50px auto;
+    width: 100%;
+    padding: 10px 20px;
+    background: #c2360f;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 14pt;
+    border: none;
+    outline: none;
+    border-radius: 100px;
+}
+
+
+
+
+
+
+.loading{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 150;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #23074d;
+    margin: 0px;
+    padding: 0px;
+}
+footer ul{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    padding: 0px;
+    overflow: visible;
+    flex-wrap: wrap;
+}
+footer ul li{
+    color: white;
+    text-decoration: none;
+    margin: 15px 10px;
+
+}
+footer ul a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14pt;
+
+}
+footer ul a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+footer span{
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+footer span a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+footer span a:hover{
+    color: white;
+}
+  @media (max-width:800px){
+
+    .main{
+        justify-content: center;
+    }
+    .main img{
+        margin: 25px auto;
+    }
+    .contact form{
+        width: 100%;
+    }
+    .TypedText{
+        margin: 10px auto!important;
+    }
+    .nav .col-12 ul a{
+        font-size: 12pt!important;
+    }
+    footer ul a{
+        font-size: 12pt!important;
+    }
+  }
+  
