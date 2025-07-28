@@ -21,7 +21,7 @@ To deliver high-quality visual content that captivates and engages audiences.
 https://youssefmohamed18.github.io/ALPHA-Company/
 
 ## 🔍 Preview
-![Screenshot]()
+![Screenshot](screenshot.png)
 
 ## 👨‍💻 Developed by:
 [Youssef Mohamed](https://www.linkedin.com/in/youssef-mohamed00/)
