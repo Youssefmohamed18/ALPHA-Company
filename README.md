@@ -18,7 +18,7 @@ To deliver high-quality visual content that captivates and engages audiences.
 -Illustrator
 
 ## 🌐 Live Demo
-https://youssefmohamed18.github.io/ALPHA-Company/
+[View on GitHub Pages](https://youssefmohamed18.github.io/ALPHA-Company/)
 
 ## 🔍 Preview
 ![Screenshot](screenshot.png)
